@@ -4,6 +4,9 @@ This repository is in fulfillment of COE 494 Computer Vision course. The reposit
 
 QuickDraw-Extended dataset contains real sketches of people highlighting the abstract nature of sketches. However, the sketches in Sketchy dataset were drawn from artists, which doesn't reflect the majority of real sketches. Therefore, we chose to follow an approach of improving the QuickDraw-Extended sketches using Sketchy dataset. Both dataset have a lot of classesfor training (more than 100), so we select only 12 common classes from both for sketch enhancement. The approach we followed is to train a cycleGAN for each class. But since this is not scalable, we also tried trainaing a conditional cycleGAN (similar to StarGAN) for all classes at once. However, for them to work in a real application, the class of the sketch has to be know prior to inference, which is why we train a classifier on the 12 classes. 
 
+### Datasets
+
+The link to the datasets can be found [here](https://drive.google.com/file/d/1baDeN93Jam1hZISkCcGop3_ooRvIlF0f/view?usp=sharing)
 
 ### Classifier
 
